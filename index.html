@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Calculadora de ganancias cripto</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de ganancias criptos</h1>
+         <p>Ingrese los datos y realice una estimacion de las ganancias que recibira</p>
+        <section>
+            <form action="">
+
+                <label for="InpToken"> Ingrese nombre del token
+                </label>
+                <input type="text" id="InpToken">
+
+                <label for="InpMonto">Ingrese monto invertido(USD)
+                </label>
+                <input type="number" id="InpMonto">
+
+                <label for="InpPrecio">Ingrese el precio actual del token(USD)
+                </label>
+                <input type="number" id="InpPrecio">
+
+                <label for="InpPorcentaje">Ingrese porcentaje de estimacion
+                </label>
+                <input type="number" id="InpPorcentaje">
+
+                <button type="button" onclick="hacerEstimaciones()">
+                    Hacer estimación
+                </button>
+            </form>
+        </section>
+        <div>
+            <p id ="respuesta"></p>
+        </div>
+    </header>
+    <script src="/script.js"></script>
+</body>
+</html>
